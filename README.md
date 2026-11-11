@@ -8,7 +8,7 @@ Data science and data engineering student at ENSAI, Rennes.
 
 ### ML & Deep Learning
 
-**[receipt-vlm](https://github.com/N-Mehdi/receipt-vlm)** - receipt and invoice extraction from images to JSON  
+**[receipt-vlm](https://github.com/N-Mehdi/receipt-vlm)** - LLM fine-tuning for invoices extraction with VLM
 Small vision-language models read documents well but do not follow a fixed output schema. I fine-tuned Qwen3-VL-2B with QLoRA (4-bit NF4, 0.8% trainable parameters) on a single T4, using CORD and 1,000 synthetic French invoices with consistent labels. Against the base model: field F1 from 0.35 to 0.83 on CORD, exact match from 0.13 to 0.63 on invoices, and 0.54 on unseen layouts. Served through a Dockerized FastAPI service with a [demo on Hugging Face](https://huggingface.co/spaces/N-Mehdi/receipt-vlm). `PyTorch` `Qwen3-VL` `QLoRA` `Hugging Face` `FastAPI` `Docker` `W&B`
 
 <br>
