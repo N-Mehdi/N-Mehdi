@@ -13,7 +13,7 @@ Small vision-language models read documents well but do not follow a fixed outpu
 
 <br>
 
-**[Data_Battle-Dataverse](https://github.com/N-Mehdi/Data_Battle-Dataverse)** - predicting the end of thunderstorm alerts around French airports (Data Battle IA PAU 2026, ranked 4/80)  
+**[Data_Battle-Dataverse](https://github.com/N-Mehdi/Data_Battle-Dataverse)** - predicting the end of thunderstorm alerts around airports (Data Battle IA PAU 2026, ranked 4/80)  
 Lightning alerts halt all outdoor airport activity, and operators lift them manually, often long after the storm has passed. We built a pipeline on 230K lightning strikes from the Météorage network that computes 74 spatio-temporal features at each silent instant (strike counts, distances, amplitudes, 5/10/20 min sliding windows, inter-arrival times) and compared logistic regression, random forest and XGBoost. The decision threshold (θ = 0.91) maximizes the time saved under a missed-lightning constraint: 216 hours of alerts lifted earlier than the standard rule (30 minutes after the last thunder strike), with 2% of strikes missed. Served through a FastAPI backend for batch predictions on CSV and Parquet files. `Python` `pandas` `scikit-learn` `XGBoost` `FastAPI`
 <br>
 ### Software engineering
